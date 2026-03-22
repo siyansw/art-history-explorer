@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), "Playfair Display", "Georgia", "Times New Roman", serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Met-inspired palette */
+  --color-met-red: #E4002B;
+  --color-met-black: #1A1A1A;
+  --color-met-warm-white: #FAFAF8;
+  --color-met-cream: #F5F3EE;
+  --color-met-border: #E8E6E1;
+  --color-met-text: #333;
+  --color-met-text-secondary: #666;
+  --color-met-text-muted: #999;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-met-text);
+}
+
+/* Serif headings — museum style */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Smooth expand transitions */
+.chapter-expand {
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.4s ease;
+}
+
+/* Met-style link underlines */
+a.met-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #ccc;
+  transition: text-decoration-color 0.2s;
+}
+a.met-link:hover {
+  text-decoration-color: var(--color-met-red);
 }
