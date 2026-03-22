@@ -26,7 +26,7 @@ export const curatedThemes: ThemePreview[] = [
       "Light as revelation, then atmosphere, then abstraction",
     centuryRange: "16th – 20th century",
     artworkCount: 10,
-    available: false,
+    available: true,
     anchorArtists: ["Caravaggio", "Vermeer", "Monet", "Van Gogh", "Rothko"],
   },
   {
@@ -36,7 +36,7 @@ export const curatedThemes: ThemePreview[] = [
       "From divine right to corporate satire — power and its discontents",
     centuryRange: "16th – 20th century",
     artworkCount: 10,
-    available: false,
+    available: true,
     anchorArtists: ["Raphael", "Goya", "Picasso", "Warhol", "Kruger"],
   },
   {
@@ -46,7 +46,7 @@ export const curatedThemes: ThemePreview[] = [
       "Awe as spiritual experience, then terror, then numbness",
     centuryRange: "17th – 20th century",
     artworkCount: 8,
-    available: false,
+    available: true,
     anchorArtists: ["Claude Lorrain", "Friedrich", "Turner", "Newman"],
   },
   {
@@ -55,7 +55,7 @@ export const curatedThemes: ThemePreview[] = [
     narrativeArc: "The sacred, the domestic, the political",
     centuryRange: "16th – 20th century",
     artworkCount: 8,
-    available: false,
+    available: true,
     anchorArtists: ["Raphael", "Cassatt", "Kollwitz", "Kara Walker"],
   },
   {
@@ -64,7 +64,7 @@ export const curatedThemes: ThemePreview[] = [
     narrativeArc: "Vanitas, heroic death, and modern absence",
     centuryRange: "16th – 21st century",
     artworkCount: 10,
-    available: false,
+    available: true,
     anchorArtists: ["Holbein", "Rembrandt", "Rodin", "Magritte", "Hirst"],
   },
 ];

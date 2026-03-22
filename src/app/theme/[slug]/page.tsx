@@ -1,11 +1,21 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { lonelinessTheme } from "@/data/loneliness";
+import { lightAndShadowTheme } from "@/data/light-and-shadow";
+import { powerTheme } from "@/data/power";
+import { sublimeTheme } from "@/data/the-sublime";
+import { motherhoodTheme } from "@/data/motherhood";
+import { mortalityTheme } from "@/data/mortality";
 import NarrativeArc from "@/components/NarrativeArc";
+import { Theme } from "@/data/types";
 
-// Phase 1: only loneliness theme is available
-const themeMap: Record<string, typeof lonelinessTheme> = {
+const themeMap: Record<string, Theme> = {
   loneliness: lonelinessTheme,
+  "light-and-shadow": lightAndShadowTheme,
+  power: powerTheme,
+  "the-sublime": sublimeTheme,
+  motherhood: motherhoodTheme,
+  mortality: mortalityTheme,
 };
 
 export default async function ThemePage({
